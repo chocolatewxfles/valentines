@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Little Valentine for You</title>
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: linear-gradient(135deg,#ffe6f0 0%, #fff7f9 40%, #f8f1ff 100%);
+      --card-bg: rgba(255,255,255,0.7);
+      --accent: #ff4d7e; /* EDIT: change this to your girlfriend's favorite color */
+      --accent-2: #ff82a9;
+      --text: #2b2b2b;
+      --glass: rgba(255,255,255,0.6);
+      --max-width: 880px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Poppins,system-ui,-apple-system; background:var(--bg); color:var(--text)}
+
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px}
+
+    .card{
+      width:100%;max-width:var(--max-width);background:var(--card-bg);border-radius:20px;padding:32px;box-shadow:0 10px 30px rgba(0,0,0,0.08);backdrop-filter:blur(6px);
+      display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center
+    }
+
+    @media (max-width:900px){
+      .card{grid-template-columns:1fr;padding:20px}
+    }
+
+    .left{padding:8px}
+    .title{display:flex;align-items:center;gap:16px}
+
+    .heart{
+      width:78px;height:78px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(180deg,var(--accent),var(--accent-2));box-shadow:0 6px 18px rgba(255,77,126,0.24);color:white;font-weight:700;font-family:'Dancing Script',cursive;font-size:28px}
+
+    h1{margin:0;font-size:34px;font-weight:600}
+    p.lead{margin:12px 0 18px;font-size:16px;line-height:1.5;color:#3a3a3a}
+
+    .message-box{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.6)}
+    .message{font-family:'Dancing Script',cursive;font-size:22px;color:var(--text);margin:0}
+
+    /* photo */
+    .photo-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+    .photo{width:100%;max-width:360px;height:360px;border-radius:16px;overflow:hidden;display:block;object-fit:cover;border:6px solid rgba(255,255,255,0.5);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .caption{font-size:14px;color:#555}
+
+    /* little details */
+    details{margin-top:16px}
+    summary{cursor:pointer;list-style:none;padding:12px;border-radius:10px;background:transparent;border:1px dashed rgba(0,0,0,0.06);width:max-content}
+
+    .footer{margin-top:18px;font-size:13px;color:#666}
+
+    /* subtle heart animation */
+    .big-heart{position:absolute;right:28px;top:-26px;width:120px;height:120px;opacity:0.06;transform:rotate(-20deg)}
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.08)}100%{transform:scale(1)}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="left">
+        <div class="title">
+          <div class="heart">♡</div>
+          <div>
+            <h1>Happy Valentine's Day!</h1>
+            <p class="lead">Made with a LOTTTTT of care from Kartikk , click the card to read it my love .</p>
+          </div>
+        </div>
+
+        <div class="message-box">
+           Click Open Card to reveal your  message SWEETHEARTTT!!
+          <details>
+            <summary>Open your card</summary>
+            <div style="padding:14px 6px">
+              <p class="message"> <!--  -->My lovely baby,i may not be able to make good handmade gifts but i can most defineitly code,  i just want to thank you for making my life better baby <3! I am sorry for all the times i hurt you my love, your health gets fucked up really badly and i know that. You make my days brighter by JUST being in them and most importantly thank you for being yourself,the girl who i left my heart with i know you'll never change and so do i vow to do the same my dear.You're as lovely as an individual gets you're completely perfect as you are don't let anyone convince you otherwise sweetuuu.You will always be prioritized higher than others, i'll try my best to make you feel you'll never be replaced and well i hope i can do that.I wishhh youhh a great life ahead with or without me, a part of myself wants to not even type this out lol the thought us pretending ot be strangers is such a surreal concept isn't it baby?I can't imagine a single day without having an interaction with you, let it be online only and something as simple as a "haiiii" text you will ALWAYS be someone irreplaceable and will always be loved by for as long as the course of time exists.My love for you goes far beyond what my tongue can offer and though i am not a great poet,writer or something of that caliber i am trying my best to make this as memorable as possible sweetheart,my love for you is out of the confines of my ability to aticulate it through speechhh babyyy.Anyone who comes in between our bond will have to leave let it be someone close to me or WTV if me talking to them makes you feel uncomfortable or sad, I WILL stop interacting with them to the best of my abilities and cut them off.So sorry for what you saw my dear it was my fault and you can curse at me all you want sweetu,remember if anyone ever hurts you do not tolerate it let it be me or someone else for the sake fo yourself the day you learn to leave those who dissrespect you will be the day your life will take a long term positive turn my dearest.Remember,i'll always love you- forever,eternally.
+
+                <strong> Palak babyy</strong>,
+                <br>
+                <br><br>
+                Love,<em> Your pyaraa Kachuaa</em>
+           
+<br><br>
+<div class="photo-wrap">
+                <img class="photo" src="img.jpg" alt="not workiing for some reason lol tell me i'll fix it!!"  onerror="this.style.filter='grayscale(40%)'; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=360 height=360><rect width=100% height=100% fill=\'%23ffe7f0\' /><text x=50% y=50% dominant-baseline=middle text-anchor=middle font-family=Verdana font-size=20 fill=%23666>Drop your photo named photo.jpg here</text></svg>'">
+        <div class="caption">Anotherr little place for my cutu si pyari girlfriend ka photo!!!! (she's SO CUTEE T^T) </div>
+
+
+
+
+
+
+              <!--  -->A smolll list of things i ADORE about yuhhh:-                                                
+              <ul style="margin-top:12px; color:#444">
+                <li>The way you smile without even trying</li>
+<li>How you make everything feel lighter</li>
+<li>Your laugh (it’s my favorite sound)</li>
+<li>The way you care, even about small things</li>                                                                                                                                                                                                         
+<li>How you listen to me patiently</li>
+<li>Your kindness toward everyone</li>
+<li>The way you make my bad days better</li>
+<li>How genuine you are</li>
+<li>Your cute expressions</li>
+<li>The way you say my name</li>
+<li>Your sense of humor</li>
+<li>How comfortable I feel around you</li>
+<li>Your confidence</li>
+<li>The way you understand me</li>
+<li>How you motivate me</li>
+<li>Your honesty</li>
+<li>The way you handle things maturely</li>
+<li>Your curiosity</li>
+<li>How you support me</li>
+<li>Your positivity</li>
+<li>The way you make me feel special</li>
+<li>Your creativity</li>
+<li>How you notice small details</li>
+<li>The way you care about people you love</li>
+<li>Your patience</li>
+<li>The way you make me feel calm</li>
+<li>Your uniqueness</li>
+<li>How real you are</li>
+<li>The way you respect others</li>
+<li>Your intelligence</li>
+<li>The way you explain things</li>
+<li>How you always try your best</li>
+<li>Your soft side</li>
+<li>The way you trust me</li>
+<li>How you inspire me to be better</li>
+<li>Your warmth</li>
+<li>The way you react when you’re excited</li>
+<li>How you never pretend to be someone else</li>
+<li>Your strength</li>
+<li>The way you handle tough moments</li>
+<li>Your voice</li>
+<li>The way you make ordinary moments special</li>
+<li>How you make me smile without trying</li>
+<li>Your thoughtfulness</li>
+<li>The way you remember little things</li>
+<li>Your loyalty</li>
+<li>How safe I feel with you</li>
+<li>Your energy</li>
+<li>The way you care about my dreams</li>
+<li>How you believe in me</li>
+<li>Your sweetness</li>
+<li>The way you look when you’re happy</li>
+<li>How you make me feel understood</li>
+<li>Your calm presence</li>
+<li>The way you respect my feelings</li>
+<li>How you accept me as I am</li>
+<li>Your sense of responsibility</li>
+<li>The way you express yourself</li>
+<li>How you make me laugh even when I don’t want to</li>
+<li>Your warmth toward others</li>
+<li>The way you handle emotions</li>
+<li>Your empathy</li>
+<li>The way you encourage me</li>
+<li>Your simplicity</li>
+<li>How genuine your reactions are</li>
+<li>The way you make me feel valued</li>
+<li>Your kindness when no one is watching</li>
+<li>The way you care deeply</li>
+<li>How you make me feel less alone</li>
+<li>Your soft heart</li>
+<li>The way you make time for me</li>
+<li>Your understanding nature</li>
+<li>The way you smile at small things</li>
+<li>How you make me feel lucky</li>
+<li>Your respect for people</li>
+<li>The way you brighten my mood</li>
+<li>How you stay true to yourself</li>
+<li>Your patience with me</li
+
+              </ul>
+ <p><B>Lastly, will you be my valentine Palak siingh?</B> </p>
+
+<div class="photo-wrap">
+                <img class="photo" src="img1.jpg" alt="not workiing for some reason lol tell me i'll fix it!!"  onerror="this.style.filter='grayscale(40%)'; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=360 height=360><rect width=100% height=100% fill=\'%23ffe7f0\' /><text x=50% y=50% dominant-baseline=middle text-anchor=middle font-family=Verdana font-size=20 fill=%23666>Drop your photo named photo.jpg here</text></svg>'">
+        <div class="caption">Anotherr little place for my cutu si pyari girlfriend ka photo!!!! (she's SO CUTEE T^T) </div>
+
+<div class="photo-wrap">
+                <img class="photo" src="img2.jpg" alt="not workiing for some reason lol tell me i'll fix it!!"  onerror="this.style.filter='grayscale(40%)'; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=360 height=360><rect width=100% height=100% fill=\'%23ffe7f0\' /><text x=50% y=50% dominant-baseline=middle text-anchor=middle font-family=Verdana font-size=20 fill=%23666>Drop your photo named photo.jpg here</text></svg>'">
+        <div class="caption">Anotherr little place for my cutu si pyari girlfriend ka photo!!!! (she's SO CUTEE T^T) </div>
+<div class="photo-wrap">
+                <img class="photo" src="img3.jpg" alt="not workiing for some reason lol tell me i'll fix it!!" class="right-img" onerror="this.style.filter='grayscale(40%)'; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=360 height=360><rect width=100% height=100% fill=\'%23ffe7f0\' /><text x=50% y=50% dominant-baseline=middle text-anchor=middle font-family=Verdana font-size=20 fill=%23666>Drop your photo named photo.jpg here</text></svg>'">
+        <div class="caption">Anotherr little place for my cutu si pyari girlfriend ka photo!!!! (she's SO CUTEE T^T) </div>
+
+
+            </div>
+          </details>
+        </div>
+
+
+        <p class="footer">Tip: Tell me more about everything and never be afriad to discuss about ANYTHINGGG my BABYY!! I'll always love you forever and ever my dear, as of now at the birthday i was just really stressed about my mother dear,i'll MAKE SURE we get the chance to hug and talk loveyy doveyy sometime soon!.</p>
+      </div>
+
+      <div class="photo-wrap">
+                <img class="photo" src="photo.jpg" alt="not workiing for some reason lol tell me i'll fix it!!"  onerror="this.style.filter='grayscale(40%)'; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=360 height=360><rect width=100% height=100% fill=\'%23ffe7f0\' /><text x=50% y=50% dominant-baseline=middle text-anchor=middle font-family=Verdana font-size=20 fill=%23666>Drop your photo named photo.jpg here</text></svg>'">
+        <div class="caption">A little place for my cutu si pyari girlfriend ka photo!!!! (she's SO CUTEE T^T) </div>
+
+
+
+
+
+
+<p><B> you can play whichever onee you like while you read!! </B> </p>
+<p><B> Or maybe bothhh :)</B> </p>
+
+    
+
+
+
+
+                
+       <P><B> doorn doorn :D </B></P> <audio controls preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser doesn't support audio playback PALAKK :(
+</audio>
+
+
+<P><B> I thought i saw your face todayy </B></P>
+<audio controls preload="auto">
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser doesn't support audio playback PALAKK :(
+</audio>
+
+
+        
+      </div>
+
+
